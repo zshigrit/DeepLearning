@@ -1,0 +1,63 @@
+---
+title: "One-Way ANOVA"
+author: Zheng Shi
+format: revealjs
+---
+
+## Motivation
+
+We want to test whether several treatment means are equal.
+
+Example:
+
+- Control
+- Treatment A
+- Treatment B
+
+---
+
+## Statistical Model
+
+The one-way ANOVA model is
+
+$$
+y_{ij} = \mu + \tau_i + \epsilon_{ij}
+$$
+
+where
+
+- $\tau_i$ = treatment effect
+- $\epsilon_{ij} \sim N(0,\sigma^2)$
+
+---
+
+## Hypothesis
+
+Null hypothesis
+
+$$
+H_0: \tau_1 = \tau_2 = \cdots = \tau_a = 0
+$$
+
+Alternative:
+
+At least one treatment differs.
+
+---
+
+## F Statistic
+
+$$
+F = \frac{SS_{treatment}/(a-1)}{SS_E/(N-a)}
+$$
+
+Large \(F\) suggests treatment effects.
+
+---
+
+## Conclusion
+
+ANOVA partitions variation:
+
+- Between treatments
+- Within treatments
